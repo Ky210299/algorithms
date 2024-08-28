@@ -8,13 +8,15 @@ public class InsertionSort {
 
       while(j > 0 && arr[j] > current) {
         arr[j+1] = arr[j];
-        arr[j] = current;
         j--;
       }
+      arr[j+1] = current;
+
+      System.out.print("[");
       for(int e : arr) {
-        System.out.print(e + ", ");
+        System.out.print( e + ",");
       }
-      System.out.print("\n");
+      System.out.print("]\n");
     }
   }
 }
